@@ -14,4 +14,10 @@ CREATE TABLE IF NOT EXISTS Schueler
 
 
 INSERT INTO Klasse (Name) VALUES ('1A');
+INSERT INTO Klasse (Name) VALUES ('1b');
+INSERT INTO Klasse (Name) VALUES ('2a');
+INSERT INTO Klasse (Name) VALUES ('2b');
 INSERT INTO Schueler (Vorname, Nachname, Klasse) VALUES ('Max', 'Mustermann', 1);
+INSERT INTO Schueler (Vorname, Nachname, Klasse) VALUES ('Maxime', 'Musterfrau', 2);
+INSERT INTO Schueler (Vorname, Nachname, Klasse) VALUES ('Dieter', 'Mueller', 3);
+INSERT INTO Schueler (Vorname, Nachname, Klasse) VALUES ('Peter', 'Schneider', 4);
