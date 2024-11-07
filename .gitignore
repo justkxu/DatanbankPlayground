@@ -1,0 +1,8 @@
+.idea/
+.DS_Store
+.gitignore
+
+
+DB/.env
+DB/.DS_Store
+
