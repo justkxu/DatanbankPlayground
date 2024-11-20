@@ -1,8 +1,8 @@
-import { Schueler } from '../domain/Schueler';
+import { Schueler } from '../../domain/Schueler';
 import { SchuelerRepository } from './SchuelerRepository';
 import mysql, { RowDataPacket } from 'mysql2/promise';
 import dotenv from 'dotenv';
-import pool from "./databaseConnection";
+import pool from "../databaseConnection";
 
 dotenv.config();
 

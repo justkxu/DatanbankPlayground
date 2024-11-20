@@ -1,5 +1,5 @@
 import { Schueler } from '../domain/Schueler';
-import { SchuelerRepository } from '../infrastructure/SchuelerRepository';
+import { SchuelerRepository } from '../infrastructure/schueler/SchuelerRepository';
 
 export class SchuelerService {
   private schuelerRepository: SchuelerRepository;
