@@ -6,3 +6,6 @@
 DB/.env
 DB/.DS_Store
 
+backend/node_modules/
+backend/.env
+backend/.DS_Store

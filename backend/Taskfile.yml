@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+  install-dependencies:
+    cmds:
+      - npm install
+    desc: Install all dependencies listed in package.json
