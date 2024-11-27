@@ -7,7 +7,7 @@ create table IF NOT EXISTS Klasse
 );
 CREATE TABLE IF NOT EXISTS Schueler
 (
-    ID INTEGER primary key AUTO_INCREMENT,
+    Id INTEGER primary key AUTO_INCREMENT,
     Vorname     TEXT NOT NULL,
     Nachname    TEXT NOT NULL,
     Klasse_Id      INTEGER references Klasse(Id));
