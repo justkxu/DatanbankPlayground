@@ -5,5 +5,7 @@ export interface SchuelerRepository {
 
   findById(id: number): Promise<Schueler>;
 
+  deleteById(id: number): Promise<boolean>;
+
   addSchueler(vorname: string, nachname: string, klasse: number): Promise<boolean>;
 }

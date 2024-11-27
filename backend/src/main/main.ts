@@ -14,7 +14,13 @@ async function main() {
   const newSchueler = await schuelerService.addSchueler('Phlip', 'Mueller', 1);
   console.log(newSchueler);
 
-  const updatedSchuelerList = await schuelerService.getAllSchueler();
+  let updatedSchuelerList = await schuelerService.getAllSchueler();
+  updatedSchuelerList.forEach(schueler => console.log(`${schueler.vorname} ${schueler.nachname} ${schueler.klasse}`));
+
+  const deletedSchueler = await schuelerService.deleteSchuelerById(1);
+  console.log(deletedSchueler);
+
+  updatedSchuelerList = await schuelerService.getAllSchueler();
   updatedSchuelerList.forEach(schueler => console.log(`${schueler.vorname} ${schueler.nachname} ${schueler.klasse}`));
 }
 

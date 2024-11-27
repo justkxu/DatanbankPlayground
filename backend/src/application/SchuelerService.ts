@@ -16,6 +16,10 @@ export class SchuelerService {
     return this.schuelerRepository.findById(id);
   }
 
+  public async deleteSchuelerById(id: number): Promise<boolean> {
+    return this.schuelerRepository.deleteById(id);
+  }
+
   public async addSchueler(vorname: string, nachname: string, klasse: number): Promise<boolean> {
     return this.schuelerRepository.addSchueler(vorname, nachname, klasse);
   }

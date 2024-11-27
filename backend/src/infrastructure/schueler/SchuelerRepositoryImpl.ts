@@ -38,4 +38,11 @@ export class SchuelerRepositoryImpl implements SchuelerRepository {
         values (?, ?, ?)
     `, [vorname, nachname, klasse]).then(() => true).catch(() => false)
   }
+
+  public async deleteById(id: number): Promise<boolean> {
+    return await this.db.query<RowDataPacket[]>(`
+        DELETE FROM Schueler
+        WHERE ID = ?
+    `, [id]).then(() => true).catch(() => false)
+  }
 }
