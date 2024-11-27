@@ -3,8 +3,8 @@
 ## Start DB:
 dir: DB
 ```bash
-docker-compose build
+docker compose build
 ```
 ```bash
-docker-compose up
+docker compose up
 ```

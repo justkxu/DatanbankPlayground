@@ -14,7 +14,8 @@ export class SchuelerRepositoryImpl implements SchuelerRepository {
   }
 
   public async findAll(): Promise<Schueler[]> {
-    const [rows] = await this.db.query<RowDataPacket[]>('SELECT * FROM Schueler');
+    const [rows] = await this.db.query<RowDataPacket[]>(
+      `SELECT Schueler.Vorname, Schueler.Nachname, Klasse.Name as Klasse FROM Schueler inner join Klasse on Schueler.Klasse_Id = Klasse.Id`);
     return rows.map((row: any) => new Schueler(row.ID, row.Vorname, row.Nachname, row.Klasse));
   }
 }
